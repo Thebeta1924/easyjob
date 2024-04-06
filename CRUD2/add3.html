@@ -1,0 +1,97 @@
+<head>
+<title>Agregar Clientes</title>
+<style>
+body {
+    background: url("incio.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-container {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    text-align: center; /* Añadido para centrar el contenido */
+}
+
+.toggle-button {
+    background-color: #ffee8f;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggle-button:hover {
+    background-color: #7fccff;
+}
+
+/* Añadido para centrar el formulario en el contenedor */
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Añadido para ajustar el estilo del input */
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+
+<a href="index1.php">Inicio</a>
+<br/><br/>
+<form action="add1.php" method="post" name="form1">
+<table width="25%" border="0">
+<tr>
+<td>Nombre</td>
+<td><input type="text" name="nombre"></td>
+</tr>
+<tr>
+<td>Email</td>
+<td><input type="text" name="email"></td>
+</tr>
+<tr>
+<td>Telefono</td>
+<td><input type="text" name="telefono"></td>
+</tr>
+<tr>
+<td>Documento</td>
+<td><input type="text" name="documento"></td>
+</tr>
+<tr>
+<td>Direccion</td>
+<td><input type="text" name="direccion"></td>
+</tr>
+<tr>
+<td>Foto_perfil</td>
+<td><input type="file" name="foto_perfil"></td>
+</tr>
+<tr>
+<td>Contraseña</td>
+<td><input type="text" name="contraseña"></td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" name="Submit"
+value="Agregar"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
