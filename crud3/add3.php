@@ -3,6 +3,7 @@
 <title>Adicionar Datos</title>
 </head>
 <body>
+    
 <?php
 include_once("config3.php");
 if(isset($_POST['Submit'])) {
