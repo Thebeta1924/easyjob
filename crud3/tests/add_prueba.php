@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-class add_prueba extends TestCase
+class AdicionarDatosTest extends TestCase
 {
     // Conexión a la base de datos (asegúrate de tener una conexión disponible)
     private $dbConn;
@@ -10,7 +10,7 @@ class add_prueba extends TestCase
     protected function setUp(): void
     {
         // Configurar la conexión a la base de datos antes de cada prueba
-        $this->dbConn = new PDO('mysql:host=localhost;dbname=easyjob', 'root', '');
+        $this->dbConn = new PDO('mysql:host=localhost;dbname=tu_base_de_datos', 'tu_usuario', 'tu_contraseña');
     }
 
     protected function tearDown(): void
@@ -23,12 +23,12 @@ class add_prueba extends TestCase
     {
         // 1. Preparar datos de prueba válidos
         $datosPrueba = [
-            'identificacion' => 1026555340, 
-            'nombre' => 'edwin',
-            'apellido' => 'villafrades',
-            'direccion' => 'Cra 79 SUR #77g-50',
-            'telefono' => 2147483647,
-            'fecha_nacimiento' => '1987-12-03'
+            'identificacion' => '123456789', 
+            'nombre' => 'Juan',
+            'apellido' => 'Pérez',
+            'direccion' => 'Calle Principal 123',
+            'telefono' => '123-456-7890',
+            'fecha_nacimiento' => '1990-05-15'
         ];
 
         // 2. Simular el envío del formulario (puedes usar una biblioteca como Guzzle para esto)
@@ -63,4 +63,4 @@ class add_prueba extends TestCase
     // - Tipos de datos incorrectos
     // - Identificación duplicada
     // - ...
-};
+}
